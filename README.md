@@ -39,3 +39,28 @@ cp .env.example .env
 ```bash
 npm start
 ```
+
+### Docker
+
+Make sure you have Docker installed on your machine. You can use [the official script](https://github.com/docker/docker-install) to install Docker.
+
+*At the moment, you also need to have a MongoDB server running.*
+
+- Clone the repository
+
+```bash
+git clone https://github.com/alirezabaratian/rj-dl.git
+```
+
+- Copy `.env.example` as `.env`
+
+```bash
+cp .env.example .env
+```
+
+- Define your variables in `env`
+- Run
+
+```bash
+docker run --name rj-dl --network host --env-file .env alirbara/rj-dl:latest
+```
