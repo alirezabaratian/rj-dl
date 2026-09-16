@@ -1,0 +1,27 @@
+{
+  "name": "rj-dl",
+  "version": "0.0.1",
+  "description": "A Telegram bot for downloading media from Radio Javan",
+  "homepage": "https://github.com/alirezabaratian/rj-dl#readme",
+  "bugs": {
+    "url": "https://github.com/alirezabaratian/rj-dl/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alirezabaratian/rj-dl.git"
+  },
+  "license": "Apache-2.0",
+  "author": "Alireza Baratian",
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "cloudscraper": "^4.6.0",
+    "dotenv": "^17.4.2",
+    "mongoose": "^9.10.0",
+    "node-telegram-bot-api": "^1.1.2"
+  }
+}
